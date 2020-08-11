@@ -1,0 +1,13 @@
+$primary: #0085FF;
+$success: green;
+
+button {
+  outline: none;
+  color: #ffffff;
+  background-color: $primary;
+  border-color: $primary;
+  box-shadow: none;
+  padding: 0.2rem 1rem;
+  display: inline-flex;
+  border-radius: 15rem;
+}

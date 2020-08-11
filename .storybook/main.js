@@ -1,44 +1,52 @@
 const path = require('path');
 
 module.exports = {
-  addons: [
-    '@storybook/addon-actions',
-    '@storybook/addon-links',
-    '@storybook/addon-knobs',
-    {
-      name: '@storybook/addon-docs',
-      options: {
-        configureJSX: true,
-      },
-    },
-  ],
-  stories: ['../src/stories/*.stories.tsx'],
-  webpackFinal: async config => {
-    config.module.rules.push({
-      test: /\.(ts|tsx)$/,
-      include: path.resolve(__dirname, "../src"),
-      use: [
-        require.resolve("ts-loader"),
+    addons: [
+        '@storybook/addon-actions',
+        '@storybook/addon-links',
+        '@storybook/addon-knobs',
         {
-          loader: require.resolve('react-docgen-typescript-loader'),
-          options: {
-            // Provide the path to your tsconfig.json so that your stories can
-            // display types from outside each individual story.
-            tsconfigPath: path.resolve(__dirname, "../tsconfig.json"),
-          },
+            name: '@storybook/addon-docs',
+            options: {
+                configureJSX: true,
+            },
         },
-      ],
-    });
+    ],
+    stories: ['../src/stories/*.stories.tsx'],
+    webpackFinal: async config => {
+        config.module.rules = config.module.rules.filter(rule => {
+            if (rule.test instanceof RegExp && rule.test.test('.scss')) {
+                rule.exclude = /\.(stories|story).s[ca]ss$/;
+            }
+            return rule;
+        });
 
-      // Make whatever fine-grained changes you need
-      config.module.rules.push({
-          test: /\.scss$/,
-          use: ['style-loader', 'css-loader', 'sass-loader'],
-          include: path.resolve(__dirname, "../src"),
-      });
+
+        config.module.rules.push({
+            test: /\.(ts|tsx)$/,
+            include: path.resolve(__dirname, "../src"),
+            use: [
+                require.resolve("ts-loader"),
+                {
+                    loader: require.resolve('react-docgen-typescript-loader'),
+                    options: {
+                        // Provide the path to your tsconfig.json so that your stories can
+                        // display types from outside each individual story.
+                        tsconfigPath: path.resolve(__dirname, "../tsconfig.json"),
+                    },
+                },
+            ],
+        });
+
+        // Make whatever fine-grained changes you need
+        config.module.rules.push({
+            test: /\.scss$/,
+            use: ['style-loader', 'css-loader', 'sass-loader'],
+            include: path.resolve(__dirname, "../src"),
+        });
 
 
-      config.resolve.extensions.push('.ts', '.tsx');
-    return config;
-  },
+        config.resolve.extensions.push('.ts', '.tsx');
+        return config;
+    },
 };

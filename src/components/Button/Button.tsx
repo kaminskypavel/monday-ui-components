@@ -1,5 +1,5 @@
 import React from "react";
-import "./button.css";
+import "./button.scss";
 
 type Props = {
     onClick?: () => void
@@ -7,6 +7,7 @@ type Props = {
 
 }
 
-const Button = ({children, onClick}: Props) => <button onClick={onClick}>{children}</button>
+const Button = ({children, onClick}: Props) =>
+    <button onClick={onClick}>{children}</button>
 
 export default Button;
