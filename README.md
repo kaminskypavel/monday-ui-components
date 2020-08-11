@@ -14,11 +14,13 @@ their official version , or embrace this repo 😁
 
 @todo : add an npm releases 
 
-## Todo 
-   
-@todo : add a monday biard here 
+## Releases and Version
+
+You can take part by participating in the board 👇
+
+<a target="_blank" href="https://view.monday.com/embed/687526517-0c6eea10ecefe83ec5b35d392486231a">   
+    <img src="assets/monday-board.png" alt="monday image"/>
+</a>
 
 
-<iframe src="https://view.monday.com/embed/687526517-0c6eea10ecefe83ec5b35d392486231a" width=770 height=500 style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);">
-</iframe>
 
