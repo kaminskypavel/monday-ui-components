@@ -29,14 +29,14 @@
     "@types/storybook__react": "5.2.1",
     "babel-loader": "8.1.0",
     "css-loader": "^4.2.1",
-    "fork-ts-checker-webpack-plugin": "4.1.1",
+    "fork-ts-checker-webpack-plugin": "5.0.14",
     "jest": "25.2.0",
-    "react-docgen-typescript-loader": "3.7.1",
+    "react-docgen-typescript-loader": "3.7.2",
     "sass-loader": "^9.0.3",
     "style-loader": "^1.2.1",
-    "ts-jest": "25.2.1",
-    "ts-loader": "6.2.2",
-    "typescript": "3.8.3"
+    "ts-jest": "26.2.0",
+    "ts-loader": "8.0.2",
+    "typescript": "3.9.7"
   },
   "dependencies": {
     "react": "16.13.1",
