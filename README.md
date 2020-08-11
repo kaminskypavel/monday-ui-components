@@ -19,7 +19,7 @@ their official version , or embrace this repo 😁
 Join the conversation on our monday board 👇
 
 <a target="_blank" href="https://view.monday.com/embed/687526517-0c6eea10ecefe83ec5b35d392486231a">   
-    <img src="assets/monday-board.png" alt="monday image"/>
+    <img src="assets/monday-board-thumb.png" alt="monday image"/>
 </a>
 
 
