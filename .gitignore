@@ -1,0 +1,4 @@
+.idea
+.firebase
+node_modules
+storybook-static
