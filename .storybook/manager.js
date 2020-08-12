@@ -6,6 +6,7 @@ addons.setConfig({
 
     theme: create({
         base: 'light',
-        brandTitle: 'monday (DaPulse) react components written in Typescript'
+        brandUrl: 'https://github.com/kaminskypavel/monday-ui-components',
+        brandImage: 'https://i.imgur.com/tWLLHsS.png',
     })
 });
