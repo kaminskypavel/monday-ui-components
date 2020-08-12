@@ -1,4 +1,4 @@
-@import "./../commons.scss";
+@import "./../commons";
 @import "./../typography";
 
 $success: #23b86f;
@@ -13,7 +13,6 @@ button {
   display: inline-flex;
   border-radius: 30px;
   border: none;
-  font-family: Roboto, monospace;
   line-height: 128%;
 
   &:disabled {
