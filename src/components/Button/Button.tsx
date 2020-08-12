@@ -2,12 +2,12 @@ import React from "react";
 import "./button.scss";
 
 type Props = {
+    disabled?: boolean;
     onClick?: () => void
     children?: React.ReactNode;
 
 }
 
-const Button = ({children, onClick}: Props) =>
-    <button onClick={onClick}>{children}</button>
-
-export default Button;
+export const Button = ({children, onClick, disabled = false}: Props) =>
+    <button
+        disabled={disabled}>{children}</button>

@@ -1,5 +1,6 @@
 $primary: #0085FF;
 $success: green;
+$disabled: grey;
 
 button {
   outline: none;
@@ -10,4 +11,9 @@ button {
   padding: 0.2rem 1rem;
   display: inline-flex;
   border-radius: 15rem;
+
+  &:disabled {
+    background-color: $disabled;
+    border-color: $disabled;
+  }
 }

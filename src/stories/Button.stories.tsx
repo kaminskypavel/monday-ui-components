@@ -1,6 +1,6 @@
 import React from 'react';
 import {action} from '@storybook/addon-actions';
-import Button from "../components/Button/Button";
+import Button from "../components/Button";
 
 export default {
     title: 'Button',
@@ -14,5 +14,9 @@ export const onClick = () => (
         alert("clicked! open 'Actions' view to see the event ")
         action('clicked')
     }}>Click on Me 👆</Button>
+);
+
+export const disabled = () => (
+    <Button disabled={true}>Disabled</Button>
 );
 
