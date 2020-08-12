@@ -1,8 +1,12 @@
-# Monday (DaPulse) unofficial components for app developers
+# monday (DaPulse) components implemented in react and typescript
+<img src="assets/logo.png" alt="monday image"/>
+
+## Demo 
+Browse our [components](https://monday-ui-components.netlify.app)
 
 ## Motivation 
-This repo should server app developers, until monday.com will release 
-their official version , or embrace this repo 😁
+This repo should serve app developers, until monday.com will release 
+their official repo , or embrace this one 😁
 
 ## Tech 
 
