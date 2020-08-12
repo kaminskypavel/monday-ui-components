@@ -3,6 +3,7 @@
 # Monday.com (DaPulse) react components
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/145b902d-b4cf-4160-ab4a-7fea4dcc5a14/deploy-status)](https://app.netlify.com/sites/monday-ui-components/deploys)
+[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://monday-ui-components.netlify.app/?path=/docs/components-button--default-button)
 
 ## Demo
 Browse the [components library](https://monday-ui-components.netlify.app/?path=/docs/components-button--default-button)
