@@ -8,6 +8,8 @@
 ## Demo
 Browse the [components library](https://monday-ui-components.netlify.app/?path=/docs/components-button--default-button)
 
+<img src="assets/stroybook-demo.gif" alt="storybook"/>
+
 ## Guidelines
 Follow [Monday's official Design system guidelines](https://design.monday.com/03276924d/p/618d70-button)
 
