@@ -1,4 +1,5 @@
 import React from "react";
+import 'fontsource-roboto';
 import "./button.scss";
 
 type Props = {

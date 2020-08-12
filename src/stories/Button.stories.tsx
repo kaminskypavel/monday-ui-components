@@ -14,18 +14,18 @@ const Template: any = (args: any) => <Button {...args}/>;
 export const DefaultButton = Template.bind({});
 DefaultButton.args = {
     disabled: false,
-    label: "Primary Button"
+    label: "Primary"
 };
 
 export const SuccessButton = Template.bind({});
 SuccessButton.args = {
     type: "success",
-    label: "Success Button"
+    label: "Success"
 }
 export const InfoButton = Template.bind({});
 InfoButton.args = {
     type: "info",
-    label: "Info Button"
+    label: "Info"
 }
 
 export const OnClick = Template.bind({});
