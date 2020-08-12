@@ -1,22 +1,35 @@
 import React from 'react';
-import {action} from '@storybook/addon-actions';
 import Button from "../components/Button";
 
 export default {
-    title: 'Button',
+    title: 'Components/Button',
     component: Button,
+    argTypes: {
+        onClick: {action: 'clicked'},
+    },
 };
 
-export const Text = () => <Button>I'm A Button</Button>;
+const Template: any = (args: any) => <Button {...args}/>;
 
-export const onClick = () => (
-    <Button onClick={() => {
-        alert("clicked! open 'Actions' view to see the event ")
-        action('clicked')
-    }}>Click on Me 👆</Button>
-);
+export const DefaultButton = Template.bind({});
+DefaultButton.args = {
+    disabled: false,
+    label: "Primary Button"
+};
 
-export const disabled = () => (
-    <Button disabled={true}>Disabled</Button>
-);
+export const SuccessButton = Template.bind({});
+SuccessButton.args = {
+    type: "success",
+    label: "Success Button"
+}
+export const InfoButton = Template.bind({});
+InfoButton.args = {
+    type: "info",
+    label: "Info Button"
+}
+
+export const OnClick = Template.bind({});
+OnClick.args = {
+    label: "Click me 👆"
+}
 

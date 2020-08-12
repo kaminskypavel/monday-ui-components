@@ -4,10 +4,24 @@ import "./button.scss";
 type Props = {
     disabled?: boolean;
     onClick?: () => void
+    type?: "primary" | "success" | "error" | "info"
+    label: string
     children?: React.ReactNode;
 
 }
 
-export const Button = ({children, onClick, disabled = false}: Props) =>
-    <button
-        disabled={disabled}>{children}</button>
+export const Button = (props: Props) => {
+    const {
+        label,
+        onClick,
+        disabled,
+        type = "primary"
+    } = props;
+    return <button
+        className={type}
+        disabled={disabled}
+        onClick={onClick}>
+        {label}
+    </button>
+}
+

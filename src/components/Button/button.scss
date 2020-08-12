@@ -1,13 +1,8 @@
-$primary: #0085FF;
-$success: green;
-$disabled: grey;
+@import "./../commons.scss";
 
 button {
   outline: none;
   color: #ffffff;
-  background-color: $primary;
-  border-color: $primary;
-  box-shadow: none;
   padding: 0.2rem 1rem;
   display: inline-flex;
   border-radius: 15rem;
@@ -16,4 +11,24 @@ button {
     background-color: $disabled;
     border-color: $disabled;
   }
+}
+
+button.primary {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+button.success {
+  background-color: $success;
+  border-color: $success;
+}
+
+button.info {
+  background-color: $info;
+  border-color: $info;
+}
+
+button.error {
+  background-color: $error;
+  border-color: $error;
 }

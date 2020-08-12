@@ -1,17 +1,19 @@
 const path = require('path');
 
 module.exports = {
-    addons: [
-        '@storybook/addon-actions',
-        '@storybook/addon-links',
-        '@storybook/addon-knobs',
-        {
-            name: '@storybook/addon-docs',
-            options: {
-                configureJSX: true,
-            },
-        },
-    ],
+    // addons: [
+    //     '@storybook/addon-actions',
+    //     '@storybook/addon-links',
+    //     '@storybook/addon-controls',
+    //     '@storybook/addon-knobs',
+    //     {
+    //         name: '@storybook/addon-docs',
+    //         options: {
+    //             configureJSX: true,
+    //         },
+    //     },
+    // ],
+    addons: ['@storybook/addon-essentials'],
     stories: ['../src/stories/*.stories.tsx'],
     webpackFinal: async config => {
         config.module.rules = config.module.rules.filter(rule => {
