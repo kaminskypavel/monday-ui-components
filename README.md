@@ -27,10 +27,10 @@ their official repo , or embrace this one 😁
 
 install the package from [npm registery](https://www.npmjs.com/package/monday-ui-components)
 
-###npm
+### npm
 ``npm i monday-ui-components``
 
-###yarn 
+### yarn 
 ``yard add monday-ui-components``
 
 
