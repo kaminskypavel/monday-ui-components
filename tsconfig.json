@@ -9,12 +9,13 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": false,
     "jsx": "react",
-    "declaration": true
+    "declaration": true,
+    "rootDir": "src"
   },
   "include": ["src/**/*", ".storybook/**/*"]
 }
