@@ -1,22 +1,18 @@
 import React from "react";
-import 'fontsource-roboto';
+import "fontsource-roboto";
 import "./badge.scss";
 
 type Props = {
-    size: "big" | "small" | "notification"
-    type: "primary" | "dark" | "notification" | "secondary"
-    count: number
-    children?: React.ReactNode;
+  size: "big" | "small" | "notification";
+  type: "primary" | "dark" | "notification" | "secondary";
+  count: number;
+};
 
-}
-
-export const Badge = (props: Props) => {
-    const {
-        count,
-        type = "primary"
-    } = props;
-    return (<div className="wrapper">
-        <span className={`badge ${type}`}>{count}</span>
-    </div>)
-}
-
+export const Badge: React.FunctionComponent<Props> = (props: Props) => {
+  const {count, size, type = "primary"} = props;
+  return (
+    <div className="wrapper">
+      <span className={`badge ${type} ${size}`}>{count}</span>
+    </div>
+  );
+};
