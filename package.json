@@ -76,8 +76,7 @@
   "dependencies": {
     "fontsource-roboto": "^3.0.3",
     "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "sass": "^1.26.10"
+    "react-dom": "16.13.1"
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0",
