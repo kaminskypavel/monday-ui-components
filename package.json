@@ -1,13 +1,14 @@
 {
   "name": "monday-ui-components",
   "version": "0.0.0-development",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "build/lib"
   ],
   "scripts": {
-    "build": "babel src -d dist --extensions \".js,.jsx,.ts,.tsx\" --ignore \"**/*.test.js\" --ignore \"**/*.stories.js\"",
+    "prepare": "npm run build",
+    "build": "tsc",
     "build-docs": "build-storybook --docs",
     "build-storybook": "build-storybook",
     "start": "npm run storybook",
