@@ -25,8 +25,13 @@ their official repo , or embrace this one 😁
 
 ## Installation
 
-@todo : add an npm releases 
+install the package from [npm registery](https://www.npmjs.com/package/monday-ui-components)
 
+###npm
+``npm i monday-ui-components``
+
+###yarn 
+``yard add monday-ui-components``
 
 
 ## Roadmap
