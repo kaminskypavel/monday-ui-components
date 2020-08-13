@@ -1,6 +1,6 @@
 {
   "name": "monday-ui-components",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -14,7 +14,8 @@
     "storybook": "start-storybook -p 6006",
     "lint": "yarn lint:prettier && yarn lint:eslint",
     "lint:eslint": "eslint src/**/*.{ts,tsx,js,json}  --fix",
-    "lint:prettier": "prettier --config .prettierrc --write src/**/*.{ts,tsx,js}"
+    "lint:prettier": "prettier --config .prettierrc --write src/**/*.{ts,tsx,js}",
+    "semantic-release": "semantic-release"
   },
   "engines": {
     "node": ">=10",
@@ -68,7 +69,8 @@
     "style-loader": "1.2.1",
     "ts-jest": "26.2.0",
     "ts-loader": "8.0.2",
-    "typescript": "3.9.7"
+    "typescript": "3.9.7",
+    "semantic-release": "17.1.1"
   },
   "dependencies": {
     "fontsource-roboto": "^3.0.3",
