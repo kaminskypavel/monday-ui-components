@@ -40,12 +40,6 @@ module.exports = {
     });
 
     // Make whatever fine-grained changes you need
-    config.module.rules.push({
-      test: /\.scss$/,
-      use: ["style-loader", "css-loader", "sass-loader"],
-      include: path.resolve(__dirname, "../src")
-    });
-
     config.resolve.extensions.push(".ts", ".tsx");
     return config;
   }
