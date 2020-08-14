@@ -7,8 +7,10 @@
 ![Semantic-Release](https://github.com/kaminskypavel/monday-ui-components/workflows/Semantic-Release/badge.svg)
 ## Demo
 Browse the [components library](https://monday-ui-components.netlify.app/?path=/docs/components-button--default-button)
-
 <img src="assets/stroybook-demo.gif" alt="storybook"/>
+
+Or run the CRA demo in the `demo` folder
+<img src="assets/cra-demo.gif" alt="cra-demo"/>
 
 ## Guidelines
 Follow [Monday's official Design system guidelines](https://design.monday.com/03276924d/p/618d70-button)

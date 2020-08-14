@@ -1,7 +1,5 @@
-.env
 .idea
 .firebase
 dist
 node_modules
 storybook-static
-demo
