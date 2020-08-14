@@ -26,9 +26,10 @@ export const typography = {
     extrabold: "500"
   },
   size: {
-    small: "14",
-    medium: "16",
-    large: "24",
-    extralarge: "32"
+    small: "14px",
+    medium: "16px",
+    mediumlarge: "16px",
+    large: "24px",
+    extralarge: "32px"
   }
 };
