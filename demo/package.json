@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/jest-dom": "4.2.4",
+    "@testing-library/react": "9.5.0",
+    "@testing-library/user-event": "7.2.1",
     "babel-jest": "24.9.0",
-    "monday-ui-components": "^1.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "monday-ui-components": "1.1.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "react-scripts": "3.4.3"
   },
   "scripts": {
@@ -34,6 +34,6 @@
     ]
   },
   "devDependencies": {
-    "@semantic-release/npm": "^7.0.5"
+    "@semantic-release/npm": "7.0.5"
   }
 }
