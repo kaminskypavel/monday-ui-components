@@ -22,6 +22,7 @@ their official repo , or embrace this one 😁
 - Typescript
 - React
 - Storybook 
+- Styled-Components
 
 ## Installation
 
