@@ -53,7 +53,7 @@ const BadgeSpan = styled.div<Pick<Props, "type" | "size">>`
   }}
 `;
 
-const Index: React.FunctionComponent<Props> = (props: Props) => {
+const Badge: React.FunctionComponent<Props> = (props: Props) => {
   const {count, size, type = "primary"} = props;
   return (
     <Wrapper>
@@ -64,4 +64,4 @@ const Index: React.FunctionComponent<Props> = (props: Props) => {
   );
 };
 
-export default Index;
+export default Badge;
