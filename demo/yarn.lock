@@ -7918,10 +7918,10 @@ mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.5"
 
-monday-ui-components@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/monday-ui-components/-/monday-ui-components-1.1.0.tgz#3dc59641b46271027b9b24f7b7ae4d9bfe15930b"
-  integrity sha512-H1/M3ENaizCJuSXOYZcCMi6mC0E3Zh1q7Ca072SxcAcBbcCvltWbMVE8Eu8+xAC57EbLSdXvWhgo2FWiHENX0w==
+monday-ui-components@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/monday-ui-components/-/monday-ui-components-1.2.0.tgz#dea974f5c6b3e267dceea9694d28d667ea0b36f0"
+  integrity sha512-sg73e8MNdBw2V11Oynkhw4IssgtHaYsKeiC3lqLP09dyEgofllQf0WVZlKyH2zMlYia0wxaTNH/qofUkwumOHQ==
   dependencies:
     "@types/styled-components" "^5.1.2"
     fontsource-roboto "^3.0.3"
