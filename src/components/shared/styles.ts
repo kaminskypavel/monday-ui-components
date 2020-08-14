@@ -8,18 +8,6 @@ export const color = {
   white: "#FFF"
 };
 
-export const spacing = {
-  padding: {
-    small: 10,
-    medium: 20,
-    large: 30
-  },
-  borderRadius: {
-    small: 5,
-    default: 10
-  }
-};
-
 // https://design.monday.com/03276924d/p/79dc30-typography/t/888377
 export const typography = {
   type: {
