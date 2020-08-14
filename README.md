@@ -10,7 +10,7 @@
 <img src="assets/stroybook-demo.gif" alt="storybook" style="max-width:600px"/>
 
 * Or run the CRA demo in the `demo` folder
-<img src="assets/cra-demo.gif" alt="cra-demo" style="max-width:600px"/>
+<img src="assets/create-react-app-demo.gif" alt="cra-demo" style="max-width:600px"/>
 
 ## Guidelines
 Follow [Monday's official Design system guidelines](https://design.monday.com/03276924d/p/618d70-button)
