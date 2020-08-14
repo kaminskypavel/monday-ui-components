@@ -7,7 +7,6 @@
     "build/lib"
   ],
   "scripts": {
-    "prepare": "npm run build",
     "build": "tsc",
     "build-docs": "build-storybook --docs",
     "build-storybook": "build-storybook",
@@ -65,9 +64,11 @@
     "typescript": "3.9.7"
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.2",
     "fontsource-roboto": "^3.0.3",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "^5.1.1"
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0",
