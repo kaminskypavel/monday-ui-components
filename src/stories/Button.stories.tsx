@@ -19,13 +19,17 @@ DefaultButton.args = {
 
 export const SuccessButton = Template.bind({});
 SuccessButton.args = {
+  disabled: false,
   type: "success",
-  label: "Success"
+  label: "Success Button",
+  onClick: () => alert("woo-hoo 🎉")
 };
+
 export const InfoButton = Template.bind({});
 InfoButton.args = {
+  disabled: false,
   type: "info",
-  label: "Info"
+  label: "Info Button"
 };
 
 export const OnClick = Template.bind({});
