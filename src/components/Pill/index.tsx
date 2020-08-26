@@ -9,23 +9,29 @@ type Props = {
   label: string;
 };
 
+export const PillsGroup = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const InnerText = styled.span`
-  //font-family: "Roboto", helvetica, arial, sans-serif;
-  //font-weight: 300;
-  //line-height: 1.5;
   font-family: "Roboto", helvetica, arial, sans-serif;
   font-weight: 400;
   line-height: 19.5px;
   font-size: 13px;
 `;
 
-const PillComponent = styled.a<Pick<Props, "disabled" | "active">>`
+const PillComponent = styled.div<Pick<Props, "disabled" | "active">>`
   border: none;
   cursor: pointer;
   padding: 5px 16px 5px 16px;
   margin: 0 2px;
   text-decoration: none;
   border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: ${({active, disabled}) => {
     if (disabled) {
@@ -56,9 +62,11 @@ const Pill: React.FunctionComponent<Props> = ({
   disabled = false,
   active = false
 }) => (
-  <PillComponent active={active} disabled={disabled} onClick={onClick}>
-    <InnerText>{label}</InnerText>
-  </PillComponent>
+  <PillsGroup>
+    <PillComponent active={active} disabled={disabled} onClick={onClick}>
+      <InnerText>{label}</InnerText>
+    </PillComponent>
+  </PillsGroup>
 );
 
 export default Pill;

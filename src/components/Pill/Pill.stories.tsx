@@ -1,5 +1,5 @@
 import React from "react";
-import Pill from ".";
+import Pill, {PillsGroup} from ".";
 
 export default {
   title: "Components/Pill",
@@ -12,11 +12,11 @@ export default {
 const Template: any = (args: any) => <Pill {...args} />;
 
 export const GroupOfPills = () => (
-  <div>
+  <PillsGroup>
     <Pill label="Days" active />
     <Pill label="Weeks" />
     <Pill label="Months" />
-  </div>
+  </PillsGroup>
 );
 
 export const ActivePill = Template.bind({});
