@@ -33,7 +33,7 @@ NotActivePill.args = {
 
 export const DisabledPill = Template.bind({});
 DisabledPill.args = {
-  disabled: false,
+  disabled: true,
   label: "Disabled"
 };
 

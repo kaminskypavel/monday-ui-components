@@ -10,7 +10,7 @@ type Props = {
 };
 
 export const PillsGroup = styled.div`
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 `;
@@ -29,13 +29,13 @@ const PillComponent = styled.div<Pick<Props, "disabled" | "active">>`
   margin: 0 2px;
   text-decoration: none;
   border-radius: 16px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 
   background-color: ${({active, disabled}) => {
     if (disabled) {
-      return "#c6c6c6";
+      return "rgb(237, 238, 240)";
     }
 
     return active ? "#e5f4ff" : "none";
@@ -62,11 +62,9 @@ const Pill: React.FunctionComponent<Props> = ({
   disabled = false,
   active = false
 }) => (
-  <PillsGroup>
-    <PillComponent active={active} disabled={disabled} onClick={onClick}>
-      <InnerText>{label}</InnerText>
-    </PillComponent>
-  </PillsGroup>
+  <PillComponent active={active} disabled={disabled} onClick={onClick}>
+    <InnerText>{label}</InnerText>
+  </PillComponent>
 );
 
 export default Pill;
