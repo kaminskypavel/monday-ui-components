@@ -32,6 +32,10 @@ const PillComponent = styled.div<Pick<Props, "disabled" | "active">>`
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 
   background-color: ${({active, disabled}) => {
     if (disabled) {
@@ -62,7 +66,10 @@ const Pill: React.FunctionComponent<Props> = ({
   disabled = false,
   active = false
 }) => (
-  <PillComponent active={active} disabled={disabled} onClick={onClick}>
+  <PillComponent
+    active={active}
+    disabled={disabled}
+    onClick={() => (disabled ? onClick : null)}>
     <InnerText>{label}</InnerText>
   </PillComponent>
 );

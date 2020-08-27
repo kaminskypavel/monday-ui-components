@@ -34,7 +34,8 @@ NotActivePill.args = {
 export const DisabledPill = Template.bind({});
 DisabledPill.args = {
   disabled: true,
-  label: "Disabled"
+  label: "Disabled",
+  onClick: () => alert("clicked")
 };
 
 export const OnClick = Template.bind({});
