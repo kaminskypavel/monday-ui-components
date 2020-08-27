@@ -69,7 +69,7 @@ const Pill: React.FunctionComponent<Props> = ({
   <PillComponent
     active={active}
     disabled={disabled}
-    onClick={() => (disabled ? onClick : null)}>
+    onClick={() => !disabled && onClick && onClick()}>
     <InnerText>{label}</InnerText>
   </PillComponent>
 );

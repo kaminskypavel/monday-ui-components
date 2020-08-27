@@ -9,6 +9,8 @@ export default {
   }
 };
 
+const onClick = () => alert("clicked");
+
 const Template: any = (args: any) => <Pill {...args} />;
 
 export const GroupOfPills = () => (
@@ -22,23 +24,27 @@ export const GroupOfPills = () => (
 export const ActivePill = Template.bind({});
 ActivePill.args = {
   active: true,
-  label: "Active"
+  label: "Active",
+  onClick
 };
 
 export const NotActivePill = Template.bind({});
 NotActivePill.args = {
   active: false,
-  label: "Not Active"
+  label: "Not Active",
+  onClick
 };
 
 export const DisabledPill = Template.bind({});
 DisabledPill.args = {
   disabled: true,
   label: "Disabled",
-  onClick: () => alert("clicked")
+  onClick
 };
 
 export const OnClick = Template.bind({});
 OnClick.args = {
-  label: "Click me 👆"
+  active: true,
+  label: "Click me 👆",
+  onClick
 };
