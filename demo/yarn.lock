@@ -7961,10 +7961,10 @@ mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.5"
 
-monday-ui-components@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/monday-ui-components/-/monday-ui-components-1.3.2.tgz#96d2f540f6e3ab1a78a98263367c0642f01e7a17"
-  integrity sha512-KYZEUPDSnyTAdRhCECv00YKIvLm/1aixD6Wvjs1EdXTusKaYiW4YUIzwgu1B6yMBG056VWv/BxUZGWkh+FhBTg==
+monday-ui-components@1.3.8:
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/monday-ui-components/-/monday-ui-components-1.3.8.tgz#f1b4b84ec674ec5ecd42946834afec3d6a73962c"
+  integrity sha512-kra29ymoeYMIsrWZSfsH0xDgBKjbr4k9QRDLO8jsSVTP7y2rkEArB0TxexWrGLp+dQeu3qzdL3X4fUqbWPSfoQ==
   dependencies:
     "@types/styled-components" "^5.1.2"
     fontsource-roboto "^3.0.3"
