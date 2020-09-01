@@ -9,6 +9,9 @@
   "packageRules": [
     {
       "depTypeList": ["devDependencies"],
+      "groupName": "eslint",
+      "schedule": ["on the first day of the month"],
+      "automerge": true,
       "commitBody": "[skip ci]",
       "automerge": true
     }
